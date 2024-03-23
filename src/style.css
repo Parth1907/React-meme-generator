@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	height: 65px;
+	color: #ffffff;
+	background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.logo-img {
+	width: 31.31px;
+	height: 26.22px;
+	margin-left: 29px;
+	margin-right: 5px;
+}
+
+.logo-text {
+	font-size: 21px;
+	letter-spacing: -0.1em;
+}
+
+.header-text {
+	font-family: Inter;
+	margin-left: auto;
+	margin-right: 28px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	/* justify-items: center; */
+	align-items: center;
+}
+
+.meme-search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+}
+
+.meme-search > button {
+	font-size: large;
+	width: 60px;
+	height: 48px;
+}
+
+.meme-form {
+	margin-top: 28px;
+	display: grid;
+        gap: 17px;
+
+	grid-template-areas:
+		"input1 input2"
+		"submit submit";
+}
+
+.dialogue {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	border-radius: 5px;
+	height: 35px;
+	text-indent: 5px;
+	font-family: "Karla", sans-serif;
+	border: 1px solid #d5d4d8;
+}
+
+.top {
+	grid-area: input1;
+}
+.bottom {
+	grid-area: input2;
+}
+button {
+	margin-top: 15px;
+	margin-bottom: 17px;
+	font-family: "Karla", sans-serif;
+	background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+	color: #fff;
+	grid-area: submit;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	width: 477px;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    width: 477px;
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom-position {
+    bottom: 0;
+}
+
+.top-position {
+    top: 0;
+} 
+
+/* 
+
+.meme--image {
+    
+}
+
+
+
+*/
